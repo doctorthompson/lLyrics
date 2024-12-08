@@ -61,13 +61,16 @@ class Parser(object):
         if end == -1:
             print("lyrics end not found ")
             return ""
-        resp = resp[:end+25]
+        resp = resp[:end + 25]
 
-        # replace unwanted parts
+        # convert line endings
         resp = resp.replace("\n", "")
         resp = re.sub("<br ?/?>", "\n",resp)
         resp = resp.replace("\n\n", "\n")
-        resp = re.sub("</?(a|h5|img|div).*>","",resp)
-        resp = "\n".join(line.strip() for line in resp.split("\n"))
 
+        # remove tagged web content
+        resp = re.sub("</?(a|h[1-6]|img|div|span)[^>]*>","",resp)
+
+        # assemble lyrics
+        resp = "\n".join(line.strip() for line in resp.split("\n"))
         return resp
