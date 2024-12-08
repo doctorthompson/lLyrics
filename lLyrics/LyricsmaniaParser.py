@@ -15,7 +15,7 @@
 
 import urllib.request, urllib.error, urllib.parse
 import string
-
+import re
 import Util
 
 
@@ -52,25 +52,22 @@ class Parser(object):
 
     def get_lyrics(self, resp):
         # cut HTML source to relevant part
-        start = resp.find("</strong>")
+        start = resp.find("<div class=\"lyrics-body\">")
         if start == -1:
             print("lyrics start not found")
             return ""
-        resp = resp[(start + 9):]
-        end = resp.find("</div>")
+        resp = resp[(start + 25):]
+        end = resp.find("Powered by <b>LyricFind</b>")
         if end == -1:
             print("lyrics end not found ")
             return ""
-        resp = resp[:end]
+        resp = resp[:end+25]
 
         # replace unwanted parts
         resp = resp.replace("\n", "")
-        resp = resp.replace("<br>", "\n")
-        resp = resp.replace("<br />", "\n")
+        resp = re.sub("<br ?/?>", "\n",resp)
         resp = resp.replace("\n\n", "\n")
-        resp = resp.replace("<div class=\"p402_premium\">", "")
-        resp = resp.replace("<div class=\"fb-quotable\">", "")
-
+        resp = re.sub("</?(a|h5|img|div).*>","",resp)
         resp = "\n".join(line.strip() for line in resp.split("\n"))
 
         return resp
