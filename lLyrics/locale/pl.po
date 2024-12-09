@@ -1,13 +1,13 @@
-# German translations for PACKAGE package.
-# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Rafał Łasocha <me@swistak35.com>, 2015.
+# Polish translations for lLyrics-1.2 package.
+# Copyright (C) 2012, Timo Loewe
+# This file is distributed under the same license as the lLyrics-1.2 package.
+# timo <timoloewe91@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lLyrics-1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 16:47+0100\n"
+"POT-Creation-Date: 2024-12-08 20:28-0700\n"
 "PO-Revision-Date: 2015-06-01 17:09+0200\n"
 "Last-Translator: Rafał Łasocha <me@swistak35.com>\n"
 "Language-Team: Polish\n"
@@ -18,81 +18,81 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ../lLyrics.py:256 ../lLyrics.py:275
+#: ../lLyrics.py:255 ../lLyrics.py:274
 msgid "Lyrics"
 msgstr "Treść utworu"
 
-#: ../lLyrics.py:259
+#: ../lLyrics.py:258
 msgid "Display lyrics for the current playing song"
 msgstr ""
 
-#: ../lLyrics.py:263
+#: ../lLyrics.py:262
 msgid "Show lyrics"
 msgstr "Wyświetl treśc tego utworu"
 
-#: ../lLyrics.py:264
+#: ../lLyrics.py:263
 msgid "Search and display lyrics for this song"
 msgstr ""
 
 #. create save and cancel buttons for edited lyrics
-#: ../lLyrics.py:323
+#: ../lLyrics.py:322
 msgid "Save"
 msgstr "Zapisz"
 
-#: ../lLyrics.py:325
+#: ../lLyrics.py:324
 msgid "Cancel"
 msgstr "Anuluj"
 
 #. button for closing on demand lyrics
-#: ../lLyrics.py:332
+#: ../lLyrics.py:331
 msgid "Back to playing song"
 msgstr "Wróć do aktualnie odtwarzanego utworu"
 
-#: ../lLyrics.py:366 ../lLyrics.py:404 ../lLyrics.py:839
+#: ../lLyrics.py:365 ../lLyrics.py:403 ../lLyrics.py:837
 msgid "From cache file"
 msgstr ""
 
-#: ../lLyrics.py:371 ../Config.py:302
+#: ../lLyrics.py:370 ../Config.py:302
 msgid "Sources"
 msgstr "Źródła"
 
-#: ../lLyrics.py:375
+#: ../lLyrics.py:374
 msgid "Scan next source"
 msgstr "Sprawdź następne źródło"
 
-#: ../lLyrics.py:376
+#: ../lLyrics.py:375
 msgid "Scan all sources"
 msgstr "Sprawdź wszystkie źródła"
 
-#: ../lLyrics.py:378
+#: ../lLyrics.py:377
 msgid "Search online"
 msgstr "Wyszukaj online"
 
-#: ../lLyrics.py:380
+#: ../lLyrics.py:379
 msgid "Mark as instrumental"
 msgstr "Oznacz jako utwór instrumentalny"
 
-#: ../lLyrics.py:382
+#: ../lLyrics.py:381
 msgid "Clear lyrics"
 msgstr "Wyczyść treść"
 
-#: ../lLyrics.py:383
+#: ../lLyrics.py:382
 msgid "Edit lyrics"
 msgstr "Edytuj tekst"
 
-#: ../lLyrics.py:387
+#: ../lLyrics.py:386
 msgid "Preferences"
 msgstr "Ustawienia"
 
-#: ../lLyrics.py:603
+#: ../lLyrics.py:601
 msgid "lLyrics Preferences"
 msgstr "Ustawienia"
 
-#: ../lLyrics.py:660 ../lLyrics.py:683 ../lLyrics.py:713 ../lLyrics.py:737
+#: ../lLyrics.py:658 ../lLyrics.py:681 ../lLyrics.py:711 ../lLyrics.py:735
 msgid "searching lyrics..."
 msgstr "Wyszukiwanie tekstu utworu"
 
-#: ../lLyrics.py:845
+#: ../lLyrics.py:843
 msgid "No lyrics found"
 msgstr "Nie znaleziono treści utworu"
 

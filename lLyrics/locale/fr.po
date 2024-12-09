@@ -1,13 +1,13 @@
-# French translations for PACKAGE package.
-# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Meradi <rabahmeradi@gmail.com>, 2014.
+# French translations for lLyrics-1.2 package.
+# Copyright (C) 2012, Timo Loewe
+# This file is distributed under the same license as the lLyrics-1.2 package.
+# timo <timoloewe91@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lLyrics-1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 16:47+0100\n"
+"POT-Creation-Date: 2024-12-08 20:28-0700\n"
 "PO-Revision-Date: 2014-03-30 17:50+0200\n"
 "Last-Translator: Meradi <rabahmeradi@gmail.com>\n"
 "Language-Team: French\n"
@@ -17,81 +17,81 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../lLyrics.py:256 ../lLyrics.py:275
+#: ../lLyrics.py:255 ../lLyrics.py:274
 msgid "Lyrics"
 msgstr "Paroles"
 
-#: ../lLyrics.py:259
+#: ../lLyrics.py:258
 msgid "Display lyrics for the current playing song"
 msgstr "Afficher les paroles du morceau en cours de lecture"
 
-#: ../lLyrics.py:263
+#: ../lLyrics.py:262
 msgid "Show lyrics"
 msgstr "Afficher les paroles"
 
-#: ../lLyrics.py:264
+#: ../lLyrics.py:263
 msgid "Search and display lyrics for this song"
 msgstr "Chercher et afficher les paroles de ce morceau"
 
 #. create save and cancel buttons for edited lyrics
-#: ../lLyrics.py:323
+#: ../lLyrics.py:322
 msgid "Save"
 msgstr "Enregistrer"
 
-#: ../lLyrics.py:325
+#: ../lLyrics.py:324
 msgid "Cancel"
 msgstr "Annuler"
 
 #. button for closing on demand lyrics
-#: ../lLyrics.py:332
+#: ../lLyrics.py:331
 msgid "Back to playing song"
 msgstr "Retourner au morceau en cours de lecture"
 
-#: ../lLyrics.py:366 ../lLyrics.py:404 ../lLyrics.py:839
+#: ../lLyrics.py:365 ../lLyrics.py:403 ../lLyrics.py:837
 msgid "From cache file"
 msgstr "A partir du fichier de cache "
 
-#: ../lLyrics.py:371 ../Config.py:302
+#: ../lLyrics.py:370 ../Config.py:302
 msgid "Sources"
 msgstr "Sources"
 
-#: ../lLyrics.py:375
+#: ../lLyrics.py:374
 msgid "Scan next source"
 msgstr "Chercher la source suivante"
 
-#: ../lLyrics.py:376
+#: ../lLyrics.py:375
 msgid "Scan all sources"
 msgstr "Chercher tous les sources"
 
-#: ../lLyrics.py:378
+#: ../lLyrics.py:377
 msgid "Search online"
 msgstr "Chercher en ligne"
 
-#: ../lLyrics.py:380
+#: ../lLyrics.py:379
 msgid "Mark as instrumental"
 msgstr "Marquer ce morceau comme instrumental"
 
-#: ../lLyrics.py:382
+#: ../lLyrics.py:381
 msgid "Clear lyrics"
 msgstr "Effacer les paroles"
 
-#: ../lLyrics.py:383
+#: ../lLyrics.py:382
 msgid "Edit lyrics"
 msgstr "Modifier les paroles"
 
-#: ../lLyrics.py:387
+#: ../lLyrics.py:386
 msgid "Preferences"
 msgstr "Préférences"
 
-#: ../lLyrics.py:603
+#: ../lLyrics.py:601
 msgid "lLyrics Preferences"
 msgstr "Préférences de lLyrics"
 
-#: ../lLyrics.py:660 ../lLyrics.py:683 ../lLyrics.py:713 ../lLyrics.py:737
+#: ../lLyrics.py:658 ../lLyrics.py:681 ../lLyrics.py:711 ../lLyrics.py:735
 msgid "searching lyrics..."
 msgstr "Recherche des paroles..."
 
-#: ../lLyrics.py:845
+#: ../lLyrics.py:843
 msgid "No lyrics found"
 msgstr "Aucune paroles trouvées"
 
