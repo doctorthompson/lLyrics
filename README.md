@@ -1,3 +1,12 @@
+Fork notice
+===============
+
+This is [my](https://github.com/doctorthompson) fork of the [lLyrics](https://github.com/timoloewe/lLyrics) plugin. I'm using it to share parser updates since the original project hasn't been updated in over 8 years and doesn't appear to be approving pull requests.
+
+It is **not** my intent to become the maintainer of this project, but if you've got PRs you've submitted that haven't been approved on the main project, I guess feel free to submit them here. 
+
+If someone wants to volunteer to be the new "official fork" I'd be more than happy to replace this notice with a link to your fork.
+
 lLyrics
 ===============
 
