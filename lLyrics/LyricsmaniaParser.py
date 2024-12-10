@@ -57,25 +57,24 @@ class Parser(object):
             print("lyrics start not found")
             return ""
         resp = resp[(start + 25):]
-        end = resp.find("Powered by <b>LyricFind</b>")
+        end = resp.find('Powered by <b>LyricFind</b>')
         if end == -1:
             print("lyrics end not found ")
             return ""
 
         # preserve LyricFind credit
-        resp = resp[:end + 27]
+        resp = resp[:(end + 27)]
 
-        # convert line endings
-        resp = resp.replace("\n", "")
-        resp = re.sub("<br ?/?>", "\n",resp)
-
-        # remove tagged web content
-        resp = re.sub("</?(a|h[1-6]|img|div|span)[^>]*>","",resp)
-
+        # remove web content
+        resp = re.sub("[\n\r]","",resp)
+        resp = re.sub('<div id="video-musictory">','',resp)
+        resp = re.sub("<br ?/?>","\n",resp)
+        resp = re.sub("</?(a|p|h[1-6]|img|div)[^>]*>","\n",resp,flags=re.I)
+        resp = re.sub("</?(b|span|i)[^>]*>","",resp,flags=re.I)
         # remove empty publishing fields
-        resp = re.sub("^(Songwriters|Publisher):\s*$","\n",resp)
-        resp = resp.replace("\n\n", "\n")
+        resp = re.sub("^(Songwriters|Publisher):\\s*$","\n",resp,flags=re.I)
+        resp = resp.replace("\n\n\n", "\n\n")
 
         # assemble lyrics
-        resp = "\n".join(line.strip() for line in resp.split("\n"))
+        resp = "\n".join(line.strip().capitalize() for line in resp.split("\n"))
         return resp
